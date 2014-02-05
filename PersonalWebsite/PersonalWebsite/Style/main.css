@@ -1,0 +1,43 @@
+﻿body {
+    background-color: grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightslategrey;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    width: 60px;
+    background-color: lightslategrey;
+}
+
+img {
+    float: left;
+}
+
+.mainContainer {
+    background-color: #dddddd;
+    float: left;
+    width: 1000px;
+}
+
+.padLeft {
+    position: relative;
+    left: 10px;
+}
+
+#BodyContent {
+    position: relative;
+    float:left;
+    left:30px;
+    width:100px;
+}
