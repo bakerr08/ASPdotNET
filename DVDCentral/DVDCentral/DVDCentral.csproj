@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{55120825-B603-47C9-BECD-710B6B356046}</ProjectGuid>
+    <ProjectGuid>{78F9EBE8-56D8-4B9C-97B7-B84D3E7B6A2B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PersonalWebsite</RootNamespace>
-    <AssemblyName>PersonalWebsite</AssemblyName>
+    <RootNamespace>DVDCentral</RootNamespace>
+    <AssemblyName>DVDCentral</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,70 +57,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Customers.mdf" />
-    <Content Include="App_Data\Customers_log.ldf">
-      <DependentUpon>Customers.mdf</DependentUpon>
-    </Content>
-    <Content Include="default.aspx" />
-    <Content Include="four.aspx" />
-    <Content Include="Images\me.jpg" />
-    <Content Include="Style\main.css" />
-    <Content Include="three.aspx" />
-    <Content Include="two.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="four.aspx.cs">
-      <DependentUpon>four.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="four.aspx.designer.cs">
-      <DependentUpon>four.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="MainSite.Master.cs">
-      <DependentUpon>MainSite.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MainSite.Master.designer.cs">
-      <DependentUpon>MainSite.Master</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="three.aspx.cs">
-      <DependentUpon>three.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="three.aspx.designer.cs">
-      <DependentUpon>three.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="two.aspx.cs">
-      <DependentUpon>two.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="two.aspx.designer.cs">
-      <DependentUpon>two.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MainSite.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Business\Business.csproj">
-      <Project>{13dcef78-6cf7-4e78-bae1-f2704b29b10a}</Project>
-      <Name>Business</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -137,7 +85,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:34438/</IISUrl>
+          <IISUrl>http://localhost:22053/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
