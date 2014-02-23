@@ -1,0 +1,40 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainSite.master.cs" Inherits="DVDCentral.MainSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="style/main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+   <div class="page">
+        <div class="header">
+            <h1>DVD Central</h1>
+            <h3>The best DVDs at the best price!</h3>
+            <br />
+        </div>
+
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <p>Default</p>
+            <a href="default.aspx">Show All</a><br />           
+        </div>
+
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        
+        <div class="clearfix"></div>
+
+        <br />
+    </div>
+    
+    </form>
+</body>
+</html>
