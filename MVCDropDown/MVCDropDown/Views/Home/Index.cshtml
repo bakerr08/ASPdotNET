@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Index";
+    ViewBag.Header = "DropDown Demo";
+}
+
+<h1 id="lblMessage">@ViewBag.Header</h1>
+
+@Html.DropDownList("DropDownColors")
+
+@Scripts.Render("~/bundles/jquery")
+<script type="text/javascript">
+    $('DropDownColors').change(function () {
+        var selectedValue = $('#DropDownColors').val();
+        $.post('@Url.Action("GetColor", "Home")', { selection: selectedValue }, function (data) {
+            $('#lblMessage').text("You selected " + data.Color);
+        });
+    });
+</script>
